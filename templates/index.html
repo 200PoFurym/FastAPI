@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Hello</h3>
+<h3>Вопрос на нашем сайте!</h3>
+<ul>
+    {% for i in questions %}
+    <li> <a href="/question/{{i.id}}">{{ i.title }} </a> </li>
+    {% endfor %}
+    <h2><a href="/ask">Задать вопрос</a></h2>
+</ul>
+</body>
+</html>

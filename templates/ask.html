@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   <h1>Задать вопрос</h1>
+    <form method="post" action="{{ url_for('ask') }}">
+        <label for="title">Вопрос:</label>
+        <input type="text" id="title" name="title" required><br>
+        <label for="text"></label>
+        <textarea id="text" name="text" required></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+    <a href="{{ url_for('home') }}">Назад</a>
+</body>
+</html>
